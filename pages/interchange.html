@@ -7,23 +7,37 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
 
-    <body class="flex pl-4 pt-8 sm:pl-16 sm:pt-32">
+    <body class="flex px-4 pt-8 sm:px-16 sm:pt-32">
         <main class="space-y-2">
             <p>
                 There are three fees collected by various parties each time you
                 swipe your credit card:
             </p>
             <ul class="list-disc pl-8">
-                <li class="leading-7 transition-all duration-100 hover:text-lg">
+                <li
+                    class="leading-7 transition-all duration-100 hover:tracking-wide"
+                >
                     interchange fee
                 </li>
-                <li class="leading-7 transition-all duration-100 hover:text-lg">
+                <li
+                    class="leading-7 transition-all duration-100 hover:tracking-wide"
+                >
                     scheme fee
                 </li>
-                <li class="leading-7 transition-all duration-100 hover:text-lg">
+                <li
+                    class="leading-7 transition-all duration-100 hover:tracking-wide"
+                >
                     acquirer fee
                 </li>
             </ul>
+
+            <p>
+                The interchange fee goes to the
+                <span class="italic">issuing bank</span>, which is the bank that
+                issued the card to the customer. For example, when somebody uses
+                a Chase Sapphire card, the interchange fee goes to J.P. Morgan
+                Chase.
+            </p>
         </main>
     </body>
 </html>
