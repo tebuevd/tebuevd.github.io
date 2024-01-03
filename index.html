@@ -5,19 +5,28 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script src="https://cdn.tailwindcss.com"></script>
+        <script
+            src="https://unpkg.com/htmx.org@1.9.10"
+            integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+            crossorigin="anonymous"
+        ></script>
     </head>
 
-    <body class="flex pl-4 pt-8 sm:pl-16 sm:pt-32">
-        <aside>
+    <body class="flex gap-4 pl-4 pt-8 sm:gap-8 sm:pl-16 sm:pt-32 md:gap-20">
+        <aside class="w-min whitespace-nowrap">
             <ol class="space-y-2">
                 <li class="before:pr-1 before:content-['-']">
-                    <a
+                    <button
                         class="hover:cursor-pointer hover:underline"
-                        href="/pages/interchange.html"
-                        >notes on interchange</a
+                        hx-get="/pages/interchange.html"
+                        hx-target="#content"
+                        hx-swap="innerHTML"
                     >
+                        notes on credit card interchange
+                    </button>
                 </li>
             </ol>
         </aside>
+        <main id="content" class="max-w-xl flex-1"></main>
     </body>
 </html>
