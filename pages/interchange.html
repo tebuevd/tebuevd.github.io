@@ -1,63 +1,58 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>notes on interchange</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
+  <head>
+    <title>notes on interchange</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-    <body class="flex px-4 pt-8 sm:px-16 sm:pt-32">
-        <main class="space-y-4">
-            <p>
-                There are three fees collected by various parties each time you
-                swipe your credit card:
-            </p>
-            <ul class="list-disc pl-8">
-                <li
-                    class="leading-7 transition-all duration-100 hover:tracking-wide"
-                >
-                    interchange fee
-                </li>
-                <li
-                    class="leading-7 transition-all duration-100 hover:tracking-wide"
-                >
-                    scheme fee
-                </li>
-                <li
-                    class="leading-7 transition-all duration-100 hover:tracking-wide"
-                >
-                    acquirer fee
-                </li>
-            </ul>
+  <body class="flex px-4 pt-8 sm:px-16 sm:pt-32">
+    <main>
+      <article class="space-y-4" id="article">
+        <p>
+          There are three fees collected by various parties each time you swipe
+          your credit card:
+        </p>
+        <ul class="list-disc pl-8">
+          <li class="leading-7 transition-all duration-100 hover:tracking-wide">
+            interchange fee
+          </li>
+          <li class="leading-7 transition-all duration-100 hover:tracking-wide">
+            scheme fee
+          </li>
+          <li class="leading-7 transition-all duration-100 hover:tracking-wide">
+            acquirer fee
+          </li>
+        </ul>
 
-            <p>
-                The interchange fee goes to the
-                <span class="italic">issuing bank</span>, which is the bank that
-                issued the card to the customer. For example, when somebody uses
-                a "Chase Sapphire Preferred" card, the interchange fee goes to
-                J.P. Morgan Chase.
-            </p>
-            <p>
-                Even though Visa does not keep the interchange fee, it has the
-                power to set it. Visa decides what the interchange fee is and
-                the fee is different across its products (Visa, Visa Signature,
-                Visa Infinite, etc.), merchant categories (Retail, Travel,
-                Hospitality, etc.), and other factors. Visa updates these rates
-                several times a year and as of the time of writing the latest
-                rates can be seen
-                <a
-                    class="font-semibold text-purple-900 hover:underline"
-                    href="https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf"
-                    >here</a
-                >.
-            </p>
-            <p>
-                So what does Visa collect for itself?
-                <span class="italic">The scheme fee</span>. This fee is not
-                revealed publicly, but I've heard on podcasts that it is in the
-                range of 0.2%-0.3% of the transaction.
-            </p>
-        </main>
-    </body>
+        <p>
+          The interchange fee goes to the
+          <span class="italic">issuing bank</span>, which is the bank that
+          issued the card to the customer. For example, when somebody uses a
+          "Chase Sapphire Preferred" card, the interchange fee goes to J.P.
+          Morgan Chase.
+        </p>
+        <p>
+          Even though Visa does not keep the interchange fee, it has the power
+          to set it. Visa decides what the interchange fee is and the fee is
+          different across its products (Visa, Visa Signature, Visa Infinite,
+          etc.), merchant categories (Retail, Travel, Hospitality, etc.), and
+          other factors. Visa updates these rates several times a year and as of
+          the time of writing the latest rates can be seen
+          <a
+            class="font-semibold text-purple-900 hover:underline"
+            href="https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf"
+            >here</a
+          >.
+        </p>
+        <p>
+          So what does Visa collect for itself?
+          <span class="italic">The scheme fee</span>. This fee is not revealed
+          publicly, but I've heard on podcasts that it is in the range of
+          0.2%-0.3% of the transaction.
+        </p>
+      </article>
+    </main>
+  </body>
 </html>
