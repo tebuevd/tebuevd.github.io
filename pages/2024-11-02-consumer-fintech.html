@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Business models in consumer fintech</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="">
+    <nav class="mb-8 pt-4 pl-4">
+      <a
+        href="/"
+        class="inline-flex items-center text-gray-600 hover:text-gray-900 sm:fixed sm:top-4 sm:left-4"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 19l-7-7m0 0l7-7m-7 7h18"
+          />
+        </svg>
+      </a>
+    </nav>
+
+    <main class="max-w-xl mx-auto px-6 sm:pt-4">
+      <article class="space-y-4">
+        <h1 class="text-2xl font-semibold">
+          Business models in consumer fintech
+        </h1>
+        <p class="">
+          There are only 5 common business models in consumer fintech. They are:
+        </p>
+        <ul class="list-disc ml-8">
+          <li>Net interest income</li>
+          <li>Credit/debit card interchange</li>
+          <li>Loans</li>
+          <li>Fees</li>
+          <li>Subscriptions</li>
+        </ul>
+
+        <p class="">Despite the jargon, these are simple to understand.</p>
+
+        <section class="">
+          <h2 class="text-xl font-semibold mb-4">Net Interest Income</h2>
+          <p class="mb-4">
+            You keep money in an account and the company takes your money,
+            invests it in money market funds, and earns interest (yield).
+            Sometimes the company shares some of this yield with you, sometimes
+            they don't. This revenue tends to be pure profit for them - there
+            are approximately zero costs to moving customer deposits into
+            short-term, risk-free monetary instruments.
+          </p>
+
+          <p class="mb-4">
+            Due to the higher interest rate regime in the US from 2022-2024, net
+            interest income is a non-trivial share of several companies'
+            revenues:
+          </p>
+          <ul class="list-disc ml-8 mb-4">
+            <li>Coinbase - $278.6M in Q3 2024</li>
+            <li>Robinhood - $46M in Q3 2024</li>
+            <li>Sofi - [To be filled in]</li>
+            <li>Cash App - [To be filled in]</li>
+          </ul>
+        </section>
+
+        <section class="">
+          <h2 class="text-xl font-bold mb-4">Credit/debit card interchange</h2>
+          <p class="mb-4">
+            Every time you use your credit or debit card, the issuer gets
+            between ~1-2% of the amount in revenue [2]. Some issuers will rebate
+            a portion of that as cash back, points, miles etc and keep the rest.
+            The exact take is hard to know and depends on the type of card used,
+            purchase category, whether the issuer is "Durbin-exempt", and the
+            negotiated rate the fintech has with their card issuer. The last
+            point is worth elaborating on - most fintechs with debit/credit
+            cards are not technically banks and therefore rely on partner banks
+            to issue the card.
+          </p>
+        </section>
+
+        <section class="">
+          <h2 class="text-xl font-bold mb-4">Loans</h2>
+          <p class="mb-4">
+            I'm grouping several types of loans under this umbrella. The premise
+            is simple - you're borrowing money and paying interest on the amount
+            owed. The mechanism are varied: margin loan against your stock
+            portfolio, credit card balance, personal/student/car/mortage loans
+            etc. etc. Interest rates can be fixed or variable, the loans may be
+            amortized (you start paying back the principal right away) or not
+            (you only pay interest for the duration of the loan and then pay
+            back the principal as a lump sum at the end). A interest-only
+            period, followed by amortization is also possible. The institution
+            will earn an origination fee and a spread on the interest paid by
+            you and the interest paid by them (they're not using their own
+            capital, they're borrowing from someone else and lending to you at a
+            markup).
+          </p>
+        </section>
+
+        <section class="">
+          <h2 class="text-xl font-bold mb-4">Fees</h2>
+          <p class="mb-4">
+            Another broad category. Depending on company's specialization they
+            may charge different fees. These can be: trading fees (Coinbase),
+            foreign transaction fees, transfer fees (same-day withdrawals, wires
+            etc), miscellaneous fees (overdraft, account maintenance fees), cash
+            withdrawal fees, assets-under-management (AUM) fee etc. The industry
+            has been shifting away from fees due to a mix of competitive
+            pressures (eg Robinhood's fee-free trading, Chime removing all fees)
+            and regulation (<a
+              href="https://www.consumerfinance.gov/about-us/newsroom/cfpb-proposes-rule-to-close-bank-overdraft-loophole-that-costs-americans-billions-each-year-in-junk-fees/"
+              class="text-blue-600 hover:underline"
+              >CFPB Junk Fees Proposal</a
+            >). But despite that, this category remains substantial - overdraft
+            fees alone are estimated to be ~$9 billion per year.
+          </p>
+        </section>
+
+        <section class="">
+          <h2 class="text-xl font-bold mb-4">Subscriptions</h2>
+          <p class="mb-4">
+            This is becoming more common today as fintechs choose to forego more
+            revenue from the previous categories for customers who pay a
+            membership fee. Examples include Robinhood Gold, Coinbase One,
+            Mercury Personal.
+          </p>
+        </section>
+
+        <section class="">
+          <h2 class="text-xl font-bold mb-4">The Long Tail</h2>
+          <p class="mb-4">
+            The above five categories are not the only ways to make money in
+            fintech, just some of the most common. A future article will talk
+            about the long tail — a far more interesting space in my opinion.
+          </p>
+        </section>
+
+        <p class="mb-4">
+          As an exercise for the reader, I recommend opening your favorite
+          banking/brokerage/payments app and bucketing where you think the
+          revenue falls into. It's surprisingly easy and given the
+          <em>fintech convergence</em> (a topic for a future article) in the
+          last 10 years, each company has a mix of income from several of these
+          categories. This exercise isn't just fun, it also helps one understand
+          their relationship with the firm, and the balance of that
+          relationship. It's also a way to identify deals that are "too good to
+          be true" and are likely to be finite in length or even may be short
+          term.
+        </p>
+      </article>
+    </main>
+  </body>
+</html>

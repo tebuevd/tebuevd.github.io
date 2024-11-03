@@ -17,7 +17,13 @@
       <h1 class="font-semibold">posts:</h1>
       <ol class="space-y-2">
         <li class="before:pr-1 before:content-['-']">
-          <button class="hover:cursor-pointer hover:underline">
+          <button
+            class="hover:cursor-pointer hover:underline"
+            hx-get="/pages/2024-11-02-consumer-fintech.html"
+            hx-select="article"
+            hx-target="#content"
+            hx-swap="innerHTML"
+          >
             business models in consumer fintech
           </button>
         </li>
